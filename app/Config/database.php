@@ -68,7 +68,7 @@ class DATABASE_CONFIG {
         $url = parse_url(getenv('DATABASE_URL'));
  
         $this->default = array(
-            'datasource' => 'Database/Postgres,
+            'datasource' => 'Database/Postgres',
             'persistent' => false,
             'host' => $url['host'],
             'login' => $url['user'],
